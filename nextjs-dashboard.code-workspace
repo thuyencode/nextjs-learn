@@ -23,7 +23,7 @@
     "prettier.singleQuote": true,
     "prettier.semi": false,
     "prettier.jsxSingleQuote": true,
-    "cSpell.words": ["cssnano"]
+    "cSpell.words": ["clsx", "cssnano"]
   },
   "extensions": {
     "recommendations": [
