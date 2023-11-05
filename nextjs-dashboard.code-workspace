@@ -35,7 +35,9 @@
       "antfu.iconify",
       "christian-kohler.path-intellisense",
       "dsznajder.es7-react-js-snippets",
-      "mikestead.dotenv"
+      "dotenv.dotenv-vscode",
+      "yoavbls.pretty-ts-errors",
+      "idered.npm"
     ]
   }
 }
