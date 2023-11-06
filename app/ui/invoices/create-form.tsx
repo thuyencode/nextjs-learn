@@ -1,5 +1,6 @@
 'use client'
 
+import { createInvoice } from '@/app/lib/actions'
 import { CustomerField } from '@/app/lib/definitions'
 import { Button } from '@/app/ui/button'
 import {
@@ -12,7 +13,7 @@ import Link from 'next/link'
 
 export default function Form({ customers }: { customers: CustomerField[] }) {
   return (
-    <form>
+    <form action={createInvoice}>
       <div className='rounded-md bg-gray-50 p-4 md:p-6'>
         {/* Customer Name */}
         <div className='mb-4'>
@@ -73,6 +74,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                   type='radio'
                   value='pending'
                   className='h-4 w-4 border-gray-300 bg-gray-100 text-gray-600 focus:ring-2 focus:ring-gray-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-gray-600'
+                  defaultChecked
                 />
                 <label
                   htmlFor='pending'
